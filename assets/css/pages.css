@@ -629,6 +629,7 @@
 .main-page .section {
   width: 100%;
   padding: 110px 0;
+  overflow: hidden;
 }
 .main-page .main-section {
   padding: 207px 0;
@@ -772,6 +773,26 @@
   margin-top: 55px;
 }
 
+@media all and (max-width: 1650px) {
+  .main-page .main-section {
+    padding: 180px 0;
+  }
+  .main-page .main-title-wrap .dark-rounded-btn {
+    margin-top: 35px;
+  }
+  .main-section .img-figure {
+    max-width: 480px;
+    right: 0;
+  }
+  .mpoint-section .img-ele.type-01 {
+    right: -40px;
+  }
+  .mpoint-section .img-ele.type-02 {
+    left: 0;
+    top: -50px;
+    left: -70px;
+  }
+}
 .myc-alarm-page .desc-btn-box {
   margin-bottom: 20px;
 }

@@ -1,19 +1,6 @@
 @charset "UTF-8";
-html {
-  font-size: 0.052vw;
-}
-@media all and (min-width: 1920px) {
-  html {
-    font-size: 1px;
-  }
-}
-
-body {
-  font-size: max(16rem, 14px);
-}
-
 .inner {
-  width: 100%;
+  width: 90%;
   max-width: 1218px;
   margin: 0 auto;
   position: relative;
@@ -692,7 +679,7 @@ img {
   width: 100%;
 }
 .components-page .component-item > h2 {
-  font-size: max(24rem, 16px);
+  font-size: 24px;
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -724,14 +711,14 @@ img {
   text-align: left;
 }
 .title-wrap .title {
-  font-size: max(42rem, 28px);
+  font-size: 42px;
   letter-spacing: -0.42px;
   color: #0F1A2A;
   font-weight: 700;
   line-height: 1.4;
 }
 .title-wrap .title-sm {
-  font-size: max(32rem, 24px);
+  font-size: 32px;
   letter-spacing: -0.32px;
   color: #0F1A2A;
   font-weight: 700;
@@ -792,6 +779,17 @@ img {
   gap: 8px;
 }
 
+@media all and (max-width: 1650px) {
+  .main-title-wrap .sub-txt {
+    font-size: 24px;
+  }
+  .main-title-wrap .title {
+    font-size: 52px;
+  }
+  .main-title-wrap .title-sm {
+    font-size: 36px;
+  }
+}
 .main-title-wrap.type-col {
   flex-direction: column;
   align-items: flex-start;
@@ -816,7 +814,7 @@ img {
   font-weight: 600;
   letter-spacing: -0.2px;
   color: white;
-  gap: max(12rem, 8px);
+  gap: 12px;
   padding: 0 24px;
   padding-left: 28px;
   border-radius: 50px;
@@ -830,6 +828,12 @@ img {
   transition: all 0s;
 }
 
+@media all and (max-width: 1650px) {
+  .dark-rounded-btn {
+    height: 49px;
+    font-size: 16px;
+  }
+}
 .btn {
   background-color: transparent;
   border: 0;
@@ -1046,7 +1050,7 @@ img {
   align-items: center;
   justify-content: center;
   position: relative;
-  gap: max(8rem, 5px);
+  gap: 8px;
   height: 46px;
   border-radius: 8px;
   font-size: 16px;
@@ -1227,6 +1231,16 @@ img {
   pointer-events: none;
 }
 
+@media all and (max-width: 1650px) {
+  .bd-circle-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .bd-circle-btn .ico {
+    width: 20px;
+    height: 20px;
+  }
+}
 .txt-btn {
   background-color: transparent;
   border: 0;
@@ -1531,6 +1545,18 @@ img {
   line-height: 1.3;
 }
 
+@media all and (max-width: 1650px) {
+  .class-thumbnail-card .card-content {
+    bottom: 40px;
+    padding: 0 40px;
+  }
+  .class-thumbnail-card .card-name {
+    font-size: 26px;
+  }
+  .class-thumbnail-card .desc {
+    font-size: 16px;
+  }
+}
 .list-card {
   width: 100%;
 }
@@ -1710,7 +1736,7 @@ img {
   margin-top: 6px;
 }
 .review-card .txt-wrap .txt {
-  font-size: max(16rem, 14px);
+  font-size: 16px;
   color: #27364B;
   letter-spacing: -0.16px;
   line-height: 1.5;
@@ -1721,29 +1747,50 @@ img {
   border-radius: 40px;
 }
 .review-card.type-01 .card-top {
-  margin-bottom: max(26rem, 20px);
+  margin-bottom: 26px;
 }
 .review-card.type-01 .thumbnail {
-  width: max(100rem, 80px);
-  height: max(100rem, 80px);
+  width: 100px;
+  height: 100px;
 }
 .review-card.type-01 .user-item {
   gap: 24px;
 }
 .review-card.type-01 .user-item .sub-txt {
-  font-size: max(20rem, 18px);
+  font-size: 20px;
   font-weight: 600;
 }
 .review-card.type-01 .user-item .card-name {
-  font-size: max(32rem, 20px);
+  font-size: 32px;
   font-weight: 700;
   margin-bottom: 0;
 }
 .review-card.type-01 .txt-wrap .txt {
   color: #64748B;
-  font-size: max(18rem, 15px);
+  font-size: 18px;
 }
 
+@media all and (max-width: 1650px) {
+  .review-card.type-01 {
+    padding: 40px;
+  }
+  .review-card.type-01 .thumbnail {
+    width: 80px;
+    height: 80px;
+  }
+  .review-card.type-01 .user-item {
+    gap: 18px;
+  }
+  .review-card.type-01 .user-item .sub-txt {
+    font-size: 16px;
+  }
+  .review-card.type-01 .user-item .card-name {
+    font-size: 24px;
+  }
+  .review-card.type-01 .txt-wrap .txt {
+    font-size: 15px;
+  }
+}
 .review-card.type-02 {
   padding: 24px;
 }
@@ -1829,7 +1876,7 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: max(24rem, 18px);
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: -0.24px;
   padding-top: 2px;
@@ -1846,7 +1893,7 @@ img {
 }
 .faq-card .card-top .txt {
   font-weight: 700;
-  font-size: max(20rem, 17px);
+  font-size: 20px;
   letter-spacing: -0.2px;
   color: #2563EB;
 }
@@ -1927,7 +1974,7 @@ img {
   text-align: center;
 }
 .support-card .title-wrap .desc {
-  font-size: max(20rem, 16px);
+  font-size: 20px;
   color: #64748B;
   margin-top: 13px;
   letter-spacing: -0.2px;
@@ -2012,6 +2059,22 @@ img {
   color: #F1F4F9;
 }
 
+@media all and (max-width: 1650px) {
+  .num-white-card {
+    padding: 40px;
+  }
+  .num-white-card .ttl {
+    font-size: 22px;
+  }
+  .num-white-card .desc {
+    font-size: 16px;
+  }
+  .num-white-card .bg-num {
+    font-size: 150px;
+    right: 30px;
+    bottom: 0;
+  }
+}
 .list-chapter-card {
   width: 100%;
   padding: 18px 24px;
@@ -2181,7 +2244,7 @@ img {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 24px;
-  width: 100%;
+  width: 90%;
 }
 .profile-box .thumbnail {
   width: 442px;
