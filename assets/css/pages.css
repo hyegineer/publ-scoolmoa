@@ -779,6 +779,10 @@
   margin-bottom: 20px;
   padding: 12px 24px;
 }
+.myc-alarm-page .ment-box .color-txt {
+  color: #2563EB;
+  font-weight: 600;
+}
 .myc-alarm-page .myc-alarm-col-grp {
   gap: 8px;
 }
