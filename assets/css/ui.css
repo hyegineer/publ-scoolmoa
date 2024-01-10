@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@media all and (max-width: 310px) {
+  html, body {
+    min-width: 320px;
+  }
+}
+
 .inner {
   width: 80%;
   max-width: 1218px;
@@ -416,6 +422,11 @@
     flex-shrink: 1;
     left: -100%;
     transition: all 0.3s;
+  }
+}
+@media all and (max-width: 600px) {
+  .header-btn-wrap {
+    gap: 35px;
   }
 }
 
@@ -1442,6 +1453,7 @@ img {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: -0.14px;
+  color: #0F1A2A;
   border-bottom: 2px solid transparent;
 }
 .tabs .tab.active {
@@ -3071,6 +3083,15 @@ img {
     padding: 0 12px;
   }
 }
+@media all and (max-width: 320px) {
+  .status-box {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .status-box .status-dl {
+    padding: 0 10px;
+  }
+}
 .status-dl {
   display: inline-flex;
   align-items: center;
@@ -3099,6 +3120,12 @@ img {
   .status-dl .dd {
     font-size: 16px;
     letter-spacing: -0.16px;
+  }
+}
+@media all and (max-width: 320px) {
+  .status-dl .dt {
+    font-size: 11px;
+    letter-spacing: -0.11px;
   }
 }
 .bg-skyblue-box {
@@ -3404,6 +3431,11 @@ textarea.inp {
   min-width: 74px;
 }
 
+@media all and (max-width: 600px) {
+  .inp-btn-wrap .inp-btn {
+    min-width: 50px;
+  }
+}
 .checkbox-item {
   display: inline-flex;
   align-items: flex-start;

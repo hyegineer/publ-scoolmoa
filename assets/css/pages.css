@@ -207,6 +207,9 @@
   .auth-box .agree-box:last-child {
     margin-bottom: 0;
   }
+  .find-box .guide-ment-box {
+    margin-bottom: 20px;
+  }
   .find-box .find-content {
     padding: 24px 16px 16px;
   }
@@ -220,6 +223,12 @@
   .find-box .guide-desc {
     font-size: 12px;
     letter-spacing: -0.12px;
+  }
+  .find-box .id-box-desc-wrap {
+    margin-bottom: 25px;
+  }
+  .find-box .form-item-grp {
+    margin-bottom: 25px;
   }
 }
 .cart-list-page {
@@ -358,7 +367,7 @@
 }
 @media all and (max-width: 600px) {
   .cart-list-page {
-    padding: 37px 0 90px;
+    padding: 20px 0 90px;
   }
   .cart-list-page .title-wrap {
     margin-bottom: 30px;
@@ -614,6 +623,14 @@
   margin-bottom: 42px;
 }
 
+@media all and (max-width: 1650px) {
+  .class-detail-page {
+    padding: 60px 0 130px;
+  }
+  .class-detail-page .inner {
+    width: 90%;
+  }
+}
 @media all and (max-width: 1500px) {
   .class-detail-page .bottom-section {
     max-width: 100%;
@@ -625,12 +642,29 @@
   }
 }
 @media all and (max-width: 991px) {
+  .class-detail-page .inner {
+    width: 100%;
+  }
   .class-detail-page .tabs {
     top: 52px;
+  }
+  .class-detail-page .page-thumbnail {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+  .class-detail-page .top-section {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 0;
   }
   .class-detail-card {
     max-width: 100%;
     margin: 0 auto;
+    border: 0;
+    border-top: 1px solid #E2E8F0;
+    border-radius: 0;
+    border-bottom: 1px solid #E2E8F0;
   }
   .class-detail-card .class-btn-grp {
     flex-wrap: wrap;
@@ -639,25 +673,11 @@
   .class-detail-card .class-btn {
     width: calc((100% - 6px) / 2);
   }
-  .class-detail-page .top-section {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
 }
 @media all and (max-width: 600px) {
   .class-detail-page {
-    padding: 20px 0;
-  }
-  .class-detail-page .inner {
-    width: 100%;
-  }
-  .class-detail-page .top-section {
-    margin-bottom: 0;
-  }
-  .class-detail-page .page-thumbnail {
-    width: calc(100% - 40px);
-    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 90px;
   }
   .class-detail-page .tabs {
     justify-content: center;
@@ -671,12 +691,6 @@
   }
   .class-detail-page .content .title-wrap {
     margin-bottom: 22px;
-  }
-  .class-detail-card {
-    border: 0;
-    border-top: 1px solid #E2E8F0;
-    border-radius: 0;
-    border-bottom: 1px solid #E2E8F0;
   }
   .class-detail-card .class-btn {
     width: 100%;
@@ -742,7 +756,7 @@
 }
 @media all and (max-width: 600px) {
   .class-list-page {
-    padding-top: 37px;
+    padding-top: 20px;
     padding-bottom: 90px;
   }
   .class-list-page .pagination {
@@ -813,17 +827,17 @@
   }
 }
 @media all and (max-width: 600px) {
-  .commu-main-page .inner {
-    padding: 0 20px;
+  .commu-main-page {
+    padding-top: 20px;
+    padding-bottom: 90px;
+  }
+  .commu-main-page .faq-col-grp {
+    margin-bottom: 24px;
+  }
+  .commu-main-page .notice-content .pagination {
+    margin-top: 30px;
   }
 }
-.commu-main-page .notice-content .pagination {
-  margin-top: 30px;
-}
-.commu-main-page .faq-col-grp {
-  margin-bottom: 24px;
-}
-
 .index-page {
   padding: 80px 0;
 }
@@ -916,7 +930,7 @@
 }
 @media all and (max-width: 600px) {
   .like-list-page {
-    padding-top: 37px;
+    padding-top: 20px;
     padding-bottom: 90px;
   }
   .like-list-page .pagination {
@@ -1285,6 +1299,9 @@
   .myc-alarm-page .page-content {
     padding: 20px;
   }
+  .myc-alarm-page .myc-alarm-col-grp {
+    gap: 12px;
+  }
   .myc-alarm-page .desc-btn-box {
     flex-direction: column;
     align-items: center;
@@ -1297,12 +1314,20 @@
 }
 @media all and (max-width: 768px) {
   .myc-alarm-page .desc-btn-box {
-    padding: 18px 16px;
+    padding: 18px 10px;
   }
 }
 @media all and (max-width: 600px) {
   .myc-alarm-page .ment-box {
     padding: 12px 16px;
+  }
+}
+@media all and (max-width: 320px) {
+  .myc-alarm-page .ment-box {
+    flex-direction: column;
+  }
+  .myc-alarm-page .ment-box .btn-wrap {
+    margin-left: auto;
   }
 }
 .myc-class-page .status-box {
@@ -1428,6 +1453,9 @@
   .myc-pay-history-page .page-content {
     padding: 20px;
   }
+  .myc-pay-history-page .myc-pay-history-col-grp {
+    gap: 12px;
+  }
 }
 @media all and (max-width: 600px) {
   .myc-pay-history-page .pagination {
@@ -1475,6 +1503,7 @@
   font-weight: 400;
   letter-spacing: -0.14px;
   line-height: 1.5;
+  word-break: keep-all;
 }
 .myc-setting-page .myc-desc-box .btn-grp-wrap {
   width: 100%;
@@ -1976,7 +2005,7 @@
   position: relative;
 }
 .skill-main-section .main-title-wrap .sub-txt {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 .skill-main-section .content {
   position: relative;
@@ -2122,6 +2151,15 @@
 @media all and (max-width: 1280px) {
   .steacher-section .bg-skyblue-box {
     height: 390px;
+  }
+}
+@media all and (max-width: 1080px) {
+  .skill-main-page .skill-main-section {
+    padding-top: 70px;
+    margin-bottom: 40px;
+  }
+  .skill-main-section .img-ele.type-02 {
+    top: 135px;
   }
 }
 @media all and (max-width: 991px) {
